@@ -1,0 +1,138 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.gcs.asa.asagcs.GoogleMapFragment">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:layout_gravity="top">
+
+            <Button
+                android:text="Warning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button2"
+                android:layout_weight="1"/>
+
+            <ToggleButton
+                android:text="Take Off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/toggleButton"
+                android:layout_weight="1"
+                android:textOff="Take Off"/>
+
+            <ToggleButton
+                android:text="Go to Home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/toggleButton2"
+                android:layout_weight="1"
+                android:textOff="Go to Home"/>
+
+            <ToggleButton
+                android:text="Go to Home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/toggleButton4"
+                android:layout_weight="1"
+                android:textOff="Go to Standby"/>
+
+            <ToggleButton
+                android:text="Go to Home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/toggleButton5"
+                android:layout_weight="1"
+                android:textOff="Hold"/>
+
+            <ToggleButton
+                android:text="Go to Home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/toggleButton6"
+                android:layout_weight="1"
+                android:textOff="Resume Mission"/>
+
+            <ToggleButton
+                android:text="Go to Home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/toggleButton7"
+                android:layout_weight="1"
+                android:textOff="Go Land"/>
+
+            <ToggleButton
+                android:text="Go to Home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/toggleButton8"
+                android:layout_weight="1"
+                android:textOff="Abort Landing"/>
+
+            <ToggleButton
+                android:text="Go to Home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/toggleButton9"
+                android:layout_weight="1"
+                android:textOff="Land Now Click 3x"/>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:id="@+id/mapwhere"
+            android:layout_weight="1.5"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_weight="9"
+            android:layout_gravity="bottom"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:srcCompat="@android:drawable/ic_menu_compass"
+                android:id="@+id/followACButton"
+                android:layout_weight="1"/>
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:srcCompat="@android:drawable/btn_plus"
+                android:id="@+id/zoomInButton"
+                android:layout_weight="1"/>
+
+            <ImageButton
+                android:layout_width="match_parent"
+                app:srcCompat="@android:drawable/btn_minus"
+                android:id="@+id/zoomOutButton"
+                android:layout_weight="1"
+                android:layout_height="50dp"/>
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:srcCompat="@android:drawable/btn_star_big_on"
+                android:id="@+id/rulerButton"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

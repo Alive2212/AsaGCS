@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gcs.asa.asagcs.MainActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="14"
+            android:background="@color/place_autocomplete_prediction_primary_text_highlight">
+
+            <fragment
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:name="com.gcs.asa.asagcs.LeftMainFragment"
+                android:id="@+id/left_fragment"
+                android:layout_weight="1"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:background="@color/common_google_signin_btn_text_light_focused">
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@android:drawable/btn_star_big_on"
+                    android:id="@+id/connectButton"
+                    android:layout_gravity="clip_vertical|top"
+                    android:onClick="onConnectButtonClick"
+                    android:background="#00FFFFFF"/>
+
+                <TextView
+                    android:text="Connect"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView11"
+                    android:textAlignment="center"
+                    android:layout_marginTop="40dp"
+                    android:textColor="@color/common_google_signin_btn_text_dark_default"/>
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.gcs.asa.asagcs.RightMainFragment"
+            android:id="@+id/right_fragment"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</RelativeLayout>

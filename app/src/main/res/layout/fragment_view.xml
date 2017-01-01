@@ -1,0 +1,28 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".ViewFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.gcs.asa.asagcs.LeftMonitorFragment"
+            android:id="@+id/left_view_fragment"
+            android:layout_weight="5"/>
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.gcs.asa.asagcs.GoogleMapFragment"
+            android:id="@+id/right_view_fragment"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</FrameLayout>

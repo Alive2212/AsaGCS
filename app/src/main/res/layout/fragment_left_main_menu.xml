@@ -1,0 +1,164 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.gcs.asa.asagcs.LeftMainMenuFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_google_signin_btn_text_light_focused"
+            android:layout_marginBottom="10dp">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/btn_star_big_on"
+                android:id="@+id/homeButton"
+                android:onClick="onHomeButtonClick"
+                android:background="#00FFFFFF"
+                />
+
+            <TextView
+                android:text="Home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:textAlignment="center"
+                android:paddingTop="40dp"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_google_signin_btn_text_light_focused"
+            android:layout_marginBottom="10dp">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/btn_star_big_on"
+                android:id="@+id/monitorButton"
+                android:onClick="onMonitorButtonClick"
+                android:background="#00FFFFFF"/>
+
+            <TextView
+                android:text="Monitor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4"
+                android:textAlignment="center"
+                android:paddingTop="40dp"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_google_signin_btn_text_light_focused"
+            android:layout_marginBottom="10dp">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/btn_star_big_on"
+                android:id="@+id/flightSettingButton"
+                android:onClick="onFlightSettingButtonClick"
+                android:background="#00FFFFFF"/>
+
+            <TextView
+                android:text="Flight Setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView5"
+                android:textAlignment="center"
+                android:layout_marginTop="40dp"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_google_signin_btn_text_light_focused"
+            android:layout_marginBottom="10dp">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/btn_star_big_on"
+                android:id="@+id/missionPlaningButton"
+                android:onClick="onMissionPlaningButtonClick"
+                android:background="#00FFFFFF"/>
+
+            <TextView
+                android:text="Mission Planning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView8"
+                android:textAlignment="center"
+                android:layout_marginTop="40dp"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_google_signin_btn_text_light_focused"
+            android:layout_marginBottom="10dp">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/btn_star_big_on"
+                android:id="@+id/optionsButton"
+                android:onClick="onOptionsButtonClick"
+                android:background="#00FFFFFF"/>
+
+            <TextView
+                android:text="Options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView9"
+                android:textAlignment="center"
+                android:paddingTop="40dp"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_google_signin_btn_text_light_focused"
+            android:layout_marginBottom="10dp">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/btn_star_big_on"
+                android:id="@+id/helpButton"
+                android:onClick="onHelpButtonClick"
+                android:background="#00FFFFFF"/>
+
+            <TextView
+                android:text="Help"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView10"
+                android:textAlignment="center"
+                android:paddingTop="40dp"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"/>
+        </FrameLayout>
+
+    </LinearLayout>
+</FrameLayout>
