@@ -1,0 +1,529 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                 xmlns:app="http://schemas.android.com/apk/res-auto"
+                 xmlns:tools="http://schemas.android.com/tools"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 tools:context="layout.LeftFlightSettingFragment">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@android:drawable/btn_star_big_on"
+                        android:id="@+id/imageView1"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"/>
+
+                    <TextView
+                        android:text="Flight Working Parameters"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView1"
+                        android:layout_weight="1"
+                        android:textSize="14sp"
+                        android:textColor="#212121"
+                        android:gravity="center_vertical|right"/>
+
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_frame"
+                >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="Warning Area Radius"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView5"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="numberSigned"
+                        android:ems="10"
+                        android:id="@+id/editText"
+                        android:layout_weight="1"
+                        android:text="3000"
+                        android:gravity="center_vertical|center_horizontal"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="Warning Area Celing"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView5"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="numberSigned"
+                        android:ems="10"
+                        android:id="@+id/editText"
+                        android:layout_weight="1"
+                        android:text="3000"
+                        android:gravity="center_vertical|center_horizontal"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@android:drawable/btn_star_big_on"
+                        android:id="@+id/imageView1"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"/>
+
+                    <TextView
+                        android:text="Standby Parameters"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView1"
+                        android:layout_weight="1"
+                        android:textSize="14sp"
+                        android:textColor="#212121"
+                        android:gravity="center_vertical|right"/>
+
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_frame"
+                >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="Latitude"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView5"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="numberDecimal"
+                        android:ems="10"
+                        android:id="@+id/editText"
+                        android:layout_weight="1"
+                        android:text="35.699783"
+                        android:gravity="center_vertical|center_horizontal"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="Longitude"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView5"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="numberDecimal"
+                        android:ems="10"
+                        android:id="@+id/editText"
+                        android:layout_weight="1"
+                        android:text="51.337822"
+                        android:gravity="center_vertical|center_horizontal"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="Altitude"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView5"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="numberDecimal"
+                        android:ems="10"
+                        android:id="@+id/editText"
+                        android:layout_weight="1"
+                        android:text="300"
+                        android:gravity="center_vertical|center_horizontal"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:text="Radius"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView5"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="numberSigned"
+                        android:ems="10"
+                        android:id="@+id/editText"
+                        android:layout_weight="1"
+                        android:text="3000"
+                        android:gravity="center_vertical|center_horizontal"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@android:drawable/btn_star_big_on"
+                        android:id="@+id/imageView1"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"/>
+
+                    <TextView
+                        android:text="Approach Seaters"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView1"
+                        android:layout_weight="1"
+                        android:textSize="14sp"
+                        android:textColor="#212121"
+                        android:gravity="center_vertical|right"/>
+
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_frame"
+                >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="Heading"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView5"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="numberSigned"
+                        android:ems="10"
+                        android:id="@+id/editText"
+                        android:layout_weight="1"
+                        android:text="3000"
+                        android:gravity="center_vertical|center_horizontal"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="Span"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView5"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="numberSigned"
+                        android:ems="10"
+                        android:id="@+id/editText"
+                        android:layout_weight="1"
+                        android:text="3000"
+                        android:gravity="center_vertical|center_horizontal"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@android:drawable/btn_star_big_on"
+                        android:id="@+id/imageView1"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"/>
+
+                    <TextView
+                        android:text="Landing Location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView1"
+                        android:layout_weight="1"
+                        android:textSize="14sp"
+                        android:textColor="#212121"
+                        android:gravity="center_vertical|right"/>
+
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_frame"
+                >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="Latitude"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView5"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="numberDecimal"
+                        android:ems="10"
+                        android:id="@+id/editText"
+                        android:layout_weight="1"
+                        android:text="35.699735"
+                        android:gravity="center_vertical|center_horizontal"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="Longitude"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView5"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="numberDecimal"
+                        android:ems="10"
+                        android:id="@+id/editText"
+                        android:layout_weight="1"
+                        android:text="51.337893"
+                        android:gravity="center_vertical|center_horizontal"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="Altitude"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView5"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="numberDecimal"
+                        android:ems="10"
+                        android:id="@+id/editText"
+                        android:layout_weight="1"
+                        android:text="300"
+                        android:gravity="center_vertical|center_horizontal"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@android:drawable/btn_star_big_on"
+                    android:id="@+id/imageView1"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"/>
+
+                <TextView
+                    android:text="Security Actions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView1"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:textColor="#212121"
+                    android:gravity="center_vertical|right"/>
+
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_frame"
+            >
+
+            <CheckBox
+                android:text="Return to Home in case of low endurance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:id="@+id/checkBox4"/>
+
+            <CheckBox
+                android:text="Return to Home in case of strong wind"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:id="@+id/checkBox3"/>
+
+            <CheckBox
+                android:text="Return to Home in case of poor GPS coverage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:id="@+id/checkBox2"/>
+
+            <CheckBox
+                android:text="Return to Home after 30s in case of link loss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</FrameLayout>

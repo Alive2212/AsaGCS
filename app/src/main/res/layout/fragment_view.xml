@@ -11,17 +11,18 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <fragment
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:name="com.gcs.asa.asagcs.LeftMonitorFragment"
-            android:id="@+id/left_view_fragment"
-            android:layout_weight="5"/>
 
         <fragment
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:name="com.gcs.asa.asagcs.GoogleMapFragment"
+            android:name="layout.LeftViewFragment"
+            android:id="@+id/left_view_fragment"
+            android:layout_weight="3"/>
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="layout.GoogleMapFragment"
             android:id="@+id/right_view_fragment"
             android:layout_weight="1"/>
     </LinearLayout>

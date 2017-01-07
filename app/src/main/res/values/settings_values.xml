@@ -1,0 +1,37 @@
+<resources>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <string name="pref_header_general">General</string>
+    <string name="pref_header_socket">Connection Settings</string>
+
+    <string name="pref_use_device_gps_title">Use My Location</string>
+    <string name="pref_use_device_gps_title_description">Shows your location on map using device GPS.</string>
+
+    <string name="pref_screen_dim_title">Disable Screen Dim.</string>
+    <string name="pref_screen_dim_description">Disables screen dimming when app is running.</string>
+
+    <string name="pref_bltimeout_title">Block Change Timeout(sec)</string>
+    <string name="pref_bltimeout_description">Time pass before change block command.</string>
+    <string name="pref_default_bltimeout">3</string>
+
+    <string name="pref_header_con_settings">Connection Settings</string>
+
+    <string name="pref_ip_address_title">Server Ip Address</string>
+    <string name="pref_ip_address_default">192.168.1.1</string>
+
+
+    <string name="pref_port_number_title">Server Port Number</string>
+    <string name="pref_port_number_default">5010</string>
+
+    <string name="pref_local_port_number_title">Local Port Number</string>
+    <string name="pref_local_port_number_default">5005</string>
+
+    <string name="pref_default_airspeed">10</string>
+
+    <string name="app_control_create_new_shape_off">Create New Plane</string>
+    <string name="app_control_create_new_shape_on">Close Edit Mode</string>
+
+
+</resources>
