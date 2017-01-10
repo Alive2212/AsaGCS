@@ -3,7 +3,7 @@
              xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
-             tools:context="com.gcs.asa.asagcs.GoogleMapFragment">
+             tools:context="com.gcs.asa.asagcs.layout.GoogleMapFragment">
 
 
     <LinearLayout

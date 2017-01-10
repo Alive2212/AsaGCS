@@ -23,24 +23,24 @@
             <fragment
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:name="com.gcs.asa.asagcs.LeftMainFragment"
+                android:name="layout.LeftMainFragment"
                 android:id="@+id/left_fragment"
                 android:layout_weight="1"/>
 
-            <FrameLayout
+            <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="10"
-                android:background="@color/common_google_signin_btn_text_light_focused">
+                android:background="@color/common_google_signin_btn_text_light_focused"
+                android:onClick="onConnectButtonClick"
+                android:paddingTop="5dp">
 
-                <ImageButton
+                <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@android:drawable/btn_star_big_on"
-                    android:id="@+id/connectButton"
-                    android:layout_gravity="clip_vertical|top"
-                    android:onClick="onConnectButtonClick"
-                    android:background="#00FFFFFF"/>
+                    android:layout_height="40dp"
+                    app:srcCompat="@drawable/ic_connect"
+                    android:id="@+id/menuHomeImageView"/>
 
                 <TextView
                     android:text="Connect"
@@ -48,16 +48,15 @@
                     android:layout_height="match_parent"
                     android:id="@+id/textView11"
                     android:textAlignment="center"
-                    android:layout_marginTop="40dp"
                     android:textColor="@color/common_google_signin_btn_text_dark_default"/>
-            </FrameLayout>
+            </LinearLayout>
 
         </LinearLayout>
 
         <fragment
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:name="com.gcs.asa.asagcs.RightMainFragment"
+            android:name="layout.RightMainFragment"
             android:id="@+id/right_fragment"
             android:layout_weight="1"/>
     </LinearLayout>

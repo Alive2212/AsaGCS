@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.gcs.asa.asagcs.fragment_ac_block">
+
+    <!-- Block Name -->
+    <TextView
+        android:id="@+id/bl_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="block 1"
+        android:textIsSelectable="false"
+        android:clickable="false"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp" />
+    <View
+        android:layout_width="10dp"
+        android:layout_height="fill_parent"
+        android:background="#DADADC"
+        android:layout_alignParentStart="false"
+        android:layout_below="@+id/header"
+        android:id="@+id/bl_color"
+        android:layout_alignParentEnd="true">
+    </View>
+
+</FrameLayout>
